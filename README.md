@@ -1,53 +1,28 @@
-# Prueba Técnica de Analista de Datos - Just Join IT
+# README: Análisis de Ofertas Laborales
+Este proyecto está diseñado para analizar un conjunto de datos de ofertas laborales, procesando información detallada sobre las ofertas de trabajo y habilidades asociadas. El análisis se realiza a través de un Jupyter Notebook en Google Colaboratory y abarca la carga, procesamiento y presentación de datos relacionados con ofertas laborales.
 
-## Objetivo General
+## Características
+Carga de datos desde archivos CSV.
+Filtrado y procesamiento de datos basados en criterios específicos como país, nivel de experiencia, fecha de publicación y habilidades requeridas.
+Generación de informes sobre ofertas laborales, incluyendo el conteo de ofertas por país y nivel de experiencia, así como el análisis de habilidades solicitadas.
+## Uso
+Preparación del Entorno
+Asegúrese de tener acceso a Google Colaboratory.
+Suba los archivos small-jobs.csv y small-skills.csv al entorno de Colab o monte su Google Drive para acceder a los archivos si ya están almacenados allí.
+## Ejecución del Análisis
+El script realiza los siguientes pasos principales:
 
-Evaluar las competencias en el manejo de estructuras de datos, algoritmos de búsqueda y ordenamiento, y el procesamiento eficiente de grandes volúmenes de datos en formato CSV, utilizando un enfoque práctico que simula un escenario real de análisis de datos en el ámbito laboral de Tecnologías de la Información (TI).
+### Carga de Ofertas Laborales y Habilidades: Los archivos CSV se leen para obtener los datos de las ofertas laborales y las habilidades requeridas.
 
-## Contexto
+### Análisis de Datos: Se ejecutan varias funciones para analizar los datos:
 
-Just Join IT es una plataforma líder en Polonia para ofertas de empleo en el sector de TI. Esta prueba técnica se centra en el análisis de un conjunto de datos representativo de ofertas de trabajo, con el objetivo de extraer insights relevantes sobre tendencias en habilidades, tipos de empleo, y otros factores clave en el mercado laboral tecnológico.
-
-## Estructura de carpetas
-
-La plantilla del desafío tiene cuatro partes principales:
-
-1. [DISClib](./DISClib) Carpeta raíz con la librería oficial. Para más información sobre su implementación, visita el [Repositorio de DISClib][disclib-url].
-2. [App](./App) Carpeta con los scripts de Python siguiendo el patrón modelo-vista-controlador (MVC).
-3. [Data](./Data) Carpeta con archivos de datos CSV para cargar en la aplicación.
-4. [Docs](./Docs) Carpeta donde se debe poner el analisis de los requerimientos
-
-
-## Estructura de App
-
-El proyecto sigue el patrón Modelo-Vista-Controlador (MVC), dividido principalmente en tres archivos:
-
-### `controller.py`
-
-Responsable de mediar entre la vista (`view.py`) y el modelo (`model.py`), gestionando el flujo de datos y las operaciones entre la interfaz de usuario y la lógica de negocio. 
-
-- **Funciones clave**: Inicialización del modelo, carga de datos desde archivos CSV, delegación de operaciones analíticas al modelo.
-
-### `model.py`
-
-Contiene las estructuras de datos y algoritmos para el procesamiento y análisis de datos. Utiliza la biblioteca DISClib para estructuras de datos y algoritmos de ordenamiento.
-
-- **Estructuras de datos**: Listas, pilas, colas, mapas (tablas de hash).
-- **Algoritmos**: Ordenamiento (Shell sort, Merge sort, etc.), análisis específico de los requerimientos.
-
-### `view.py`
-
-Gestiona la interacción con el usuario, presentando menús de opciones y resultados de las operaciones en formato tabular utilizando la librería `tabulate`.
-
-## Desarrollo de la Prueba
-
-Los candidatos deben enfocarse en desarrollar las siguientes partes, siguiendo las instrucciones específicas para cada archivo y asegurando la integración efectiva de todos los componentes del proyecto:
-
-1. **Carga y procesamiento de datos**: Implementar la lógica para leer y procesar eficientemente los archivos CSV en `controller.py`, almacenando los datos en las estructuras adecuadas definidas en `model.py`.
-
-2. **Análisis de datos**: Desarrollar funciones en `model.py` para realizar los análisis solicitados en los requerimientos de la prueba técnica, aplicando algoritmos de búsqueda y ordenamiento cuando sea necesario.
-
-3. **Interfaz de usuario**: Expandir `view.py` para incluir opciones de menú que permitan al usuario ejecutar las operaciones de análisis de datos y visualizar los resultados.
-
-
-
+- informe_req1: Filtra las ofertas laborales por país y nivel de experiencia, presentando las últimas N ofertas.
+- informe_req2: Clasifica los países con el mayor número de ofertas laborales, analizando adicionalmente las ciudades con más ofertas y las habilidades más solicitadas.
+## Resultados
+Se generan tablas que presentan las ofertas laborales filtradas por los criterios especificados, así como conteos y análisis de las habilidades requeridas en las ofertas.
+## Dependencias
+- Python 3
+- Bibliotecas: csv, re, datetime, tabulate, collections
+- Google Colab (para la ejecución del notebook y manejo de archivos)
+## Notas Adicionales
+Asegúrese de ajustar las rutas de los archivos y los parámetros de las funciones según sus necesidades y la ubicación de sus archivos CSV.
