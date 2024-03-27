@@ -26,3 +26,5 @@ Se generan tablas que presentan las ofertas laborales filtradas por los criterio
 - Google Colab (para la ejecución del notebook y manejo de archivos)
 ## Notas Adicionales
 Asegúrese de ajustar las rutas de los archivos y los parámetros de las funciones según sus necesidades y la ubicación de sus archivos CSV.
+## Link video 
+https://drive.google.com/file/d/1Zk7_mIgJ0fLcMrFw_bzuknxUaIVhWFxA/view?usp=drive_link
