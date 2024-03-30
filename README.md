@@ -27,4 +27,4 @@ Se generan tablas que presentan las ofertas laborales filtradas por los criterio
 ## Notas Adicionales
 Asegúrese de ajustar las rutas de los archivos y los parámetros de las funciones según sus necesidades y la ubicación de sus archivos CSV.
 ## Link video 
-https://drive.google.com/file/d/1Zk7_mIgJ0fLcMrFw_bzuknxUaIVhWFxA/view?usp=drive_link
+https://drive.google.com/file/d/1YV8bY3JI2469Le4rmvNsx_c6mXcz2IBH/view?usp=drive_link
